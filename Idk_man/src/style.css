@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@theme {
+    --color-jomud: #C4E93A;
+}
+
+
+.background {
+  opacity: 1 !important;
+}
