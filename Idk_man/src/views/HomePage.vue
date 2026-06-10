@@ -1,6 +1,7 @@
 <!-- Home.vue -->
 <script setup lang="ts">
 import Background from "../assets/desktopHome.svg";
+// @ts-ignore
 import { animate, stagger, splitText } from "https://esm.sh/animejs";
 import { onMounted } from "vue";
 import QuotesHero from "./QuotesHero.vue";
