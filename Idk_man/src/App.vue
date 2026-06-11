@@ -108,7 +108,15 @@ const { spawnParticles, updateHoverPos, startHoverParticles, stopHoverParticles 
     </header>
 
     <!-- Mobile Menu - tampil di bawah layar HP -->
-<div class="fixed bottom-0 left-0 right-0 z-50 md:hidden" v-if="showMenu">
+      <Transition
+      enter-active-class="transition-transform duration-300 ease-out"
+      enter-from-class="translate-y-full"
+      enter-to-class="translate-y-0"
+      leave-active-class="transition-transform duration-200 ease-in"
+      leave-from-class="translate-y-0"
+      leave-to-class="translate-y-full"
+      >
+        <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden" v-if="showMenu">
   <div class="bg-black/30 backdrop-blur-md border-t border-white/10 flex justify-around py-3">
     <button @click="showOption = true" class="flex flex-col items-center gap-1 text-jomud">
       <img :src="burger" class="size-6 invert" alt="" />
@@ -127,7 +135,8 @@ const { spawnParticles, updateHoverPos, startHoverParticles, stopHoverParticles 
       <span class="text-xs">Settings</span>
     </button>
   </div>
-</div>
+        </div>
+      </transition>
 <!-- Tombol menu -->
  <div class="fixed top-5 right-5 z-50 lg:hidden">
   <div @click="showMenu = !showMenu" class="size-10">

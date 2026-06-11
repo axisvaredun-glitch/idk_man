@@ -50,7 +50,7 @@ onMounted(() => {
       <div class="w-[50%]"></div>
       <img
         loading="lazy"
-        class="absolute -right-10 -top-20 w-[60%] object-cover -z-10 scale-x-[-1] brightness-0 invert opacity-5 trans-dim"
+        class="absolute top-17 right-0 lg:-right-10 lg:-top-20 w-[60%] object-cover -z-10 scale-x-[-1] brightness-0 invert opacity-5 trans-dim"
         src="../assets/noun-islam-8398941.svg"
         alt=""
       />
