@@ -4,6 +4,7 @@ import HomePage from "../views/HomePage.vue";
 import TimePage from "../views/Time.vue";
 import QuranPage from "../views/QuranPage.vue";
 import SirahNurulYaqienPage from "../views/SirahNurulYaqien.vue";
+import MosqueFinderPage from "../views/FindTheNearestMosque.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -11,7 +12,8 @@ const router = createRouter({
     { path: "/", component: HomePage },
     { path: "/time", component: TimePage },
     { path: "/quran", component: QuranPage },
-    { path: "/nurul", component: SirahNurulYaqienPage }
+    { path: "/nurul", component: SirahNurulYaqienPage },
+    { path: "/mosque", component: MosqueFinderPage },
   ],
 });
 

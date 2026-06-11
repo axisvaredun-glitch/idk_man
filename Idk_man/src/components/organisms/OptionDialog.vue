@@ -4,6 +4,8 @@ import { useRouter } from "vue-router";
 import mosqueTime from "../../assets/mosqueTime.svg";
 import quranSvg from "../../assets/quran.svg";
 import islamicSvg from "../../assets/islamic.svg";
+import mosqueFinderSvg from "../../assets/mosqueFinder.svg";
+
 import { onUnmounted } from "vue";
 
 defineProps<{ modelValue: boolean }>();
@@ -42,6 +44,14 @@ const goToNurul = () => {
   document.querySelectorAll("canvas").forEach((c) => c.remove());
   setTimeout(() => {
     router.push("/nurul");
+  }, 150);
+};
+const goToMosque = () => {
+  emit("update:modelValue", false);
+  stopHoverParticles();
+  document.querySelectorAll("canvas").forEach((c) => c.remove());
+  setTimeout(() => {
+    router.push("/mosque");
   }, 150);
 };
 
@@ -96,6 +106,20 @@ onUnmounted(() => {
           class="size-15 brightness-0 invert hover:invert-0 cursor-pointer pointer-events-auto"
           @click="(e) => {
               goToNurul();
+              spawnParticles(e, 40, 12);
+            }
+          "
+          @mouseenter="startHoverParticles"
+          @mousemove="updateHoverPos"
+          @mouseleave="stopHoverParticles""
+          alt="Al-Quran"
+        />
+        <img
+          :src="mosqueFinderSvg"
+          title="Sirah"
+          class="size-15 brightness-0 invert hover:invert-0 cursor-pointer pointer-events-auto"
+          @click="(e) => {
+              goToMosque();
               spawnParticles(e, 40, 12);
             }
           "

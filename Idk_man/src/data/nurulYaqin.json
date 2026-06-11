@@ -1,0 +1,29 @@
+{
+  "jilid": [
+    {
+      "nomor": 1,
+      "judul": "Jilid 1",
+      "bab": [
+        {
+          "nomor": 1,
+          "judul": "Nabi kita, Muhammad saw",
+          "konten": [
+            "Beliau saw adalah utusan Allah kepada seluruh manusia...",
+            "Beliau saw membawa agama Islam..."
+          ],
+          "ringkasan": "Nabi kita Muhammad saw ialah utusan Allah..."
+        }
+      ]
+    },
+    {
+      "nomor": 2,
+      "judul": "Jilid 2",
+      "bab": []
+    },
+    {
+      "nomor": 3,
+      "judul": "Jilid 3",
+      "bab": []
+    }
+  ]
+}

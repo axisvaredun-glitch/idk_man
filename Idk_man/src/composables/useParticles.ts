@@ -58,6 +58,7 @@ const updateHoverPos = (e: MouseEvent) => {
 };
 
 const startHoverParticles = () => {
+   if (window.innerWidth < 768) return;
   hoverInterval = setInterval(() => {
     spawnParticles({ clientX: hoverX, clientY: hoverY } as MouseEvent, 3, 2);
   }, 100);
