@@ -39,8 +39,12 @@ const fetchMosques = async (lat: number, lon: number) => {
     out body;
   `;
 
+  const url = import.meta.env.DEV 
+    ? "https://overpass.kumi.systems/api/interpreter"
+    : "/api/overpass";
+
   try {
-    const res = await fetch("/api/overpass", { method: "POST", body: query });
+    const res = await fetch(url, { method: "POST", body: query });
     if (!res.ok) throw new Error();
     const data = await res.json();
     mosques.value = data.elements
