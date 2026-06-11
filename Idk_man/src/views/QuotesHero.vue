@@ -17,8 +17,8 @@ const randomQuote = ref(quotes[Math.floor(Math.random() * quotes.length)]);
     
     <!-- Kiri: Quote -->
     <div class="hero-text flex-1 max-w-lg">
-      <p class="text-white/40 text-sm tracking-widest uppercase mb-4 transis">Quote Hari Ini</p>
-      <h2 class="text-white text-3xl font-bold leading-relaxed mb-4 transis">
+      <p class="text-white/40 lg:text-sm text-[9px] tracking-widest uppercase mb-4 transis">Quote Hari Ini</p>
+      <h2 class="text-white lg:text-3xl text-[17px] font-bold leading-relaxed mb-4 transis">
         "{{ randomQuote.text }}"
       </h2>
       <p class="text-jomud text-sm tracking-wider transis">— {{ randomQuote.source }}</p>

@@ -1,5 +1,9 @@
 <!-- App.vue -->
 <script setup lang="ts">
+import Phone from "./assets/phone-call.svg"
+import burger from "./assets/burger-bar.svg"
+import setting from "./assets/setting.svg"
+import info from "./assets/info.svg"
 import logo from "./assets/logo.png";
 
 import { ref } from "vue";
@@ -37,8 +41,8 @@ const { spawnParticles, updateHoverPos, startHoverParticles, stopHoverParticles 
           Alfa
         </h1>
       </div>
-      <div class="flex flex-1 justify-center items-center text-center">
-        <nav class="transis gap-40 hidden md:flex text-jomud">
+      <div class="lg:flex flex-1 justify-center items-center text-center hidden">
+        <nav class="transis gap-40 flex text-jomud">
           <a
             href="#"
             @click="
@@ -50,7 +54,7 @@ const { spawnParticles, updateHoverPos, startHoverParticles, stopHoverParticles 
             @mouseenter="startHoverParticles"
             @mousemove="updateHoverPos"
             @mouseleave="stopHoverParticles"
-            class="hover:text-green-700"
+            class="hover:text-green-700 "
             >Option</a
           >
           <a
@@ -99,6 +103,28 @@ const { spawnParticles, updateHoverPos, startHoverParticles, stopHoverParticles 
       </div>
       <div class="w-[95.19px]"></div>
     </header>
+
+    <!-- Mobile Menu - tampil di bawah layar HP -->
+<div class="fixed bottom-0 left-0 right-0 z-50 md:hidden">
+  <div class="bg-black/30 backdrop-blur-md border-t border-white/10 flex justify-around py-3">
+    <button @click="showOption = true" class="flex flex-col items-center gap-1 text-jomud">
+      <img :src="burger" class="size-6" alt="" />
+      <span class="text-xs">Option</span>
+    </button>
+    <button @click="showContact = true" class="flex flex-col items-center gap-1 text-jomud">
+      <img :src="Phone" class="size-6 text-xl" alt="">
+      <span class="text-xs">Contact</span>
+    </button>
+    <button @click="showAbout = true" class="flex flex-col items-center gap-1 text-jomud">
+      <img :src="info" class="text-xl size-6">
+      <span class="text-xs">About</span>
+    </button>
+    <button @click="showSetting = true" class="flex flex-col items-center gap-1 text-jomud">
+      <img :src="setting" class="text-xl size-6">
+      <span class="text-xs">Settings</span>
+    </button>
+  </div>
+</div>
     <RouterView/>
     <SettingDialog v-model="showSetting"> </SettingDialog>
     <AboutDialog v-model="showAbout"></AboutDialog>
