@@ -15,7 +15,7 @@ defineEmits(["update:modelValue"]);
     ></div>
     <!-- Cardnya -->
     <div
-      class="pointer-events-auto relative z-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 w-125 shadow-2xl"
+      class="pointer-events-auto relative z-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl md:p-8 p-4 mx-2  w-125 shadow-2xl"
     >
       <slot name="title"></slot>
       <slot name="inside"></slot>
