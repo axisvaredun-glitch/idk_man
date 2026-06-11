@@ -1,5 +1,7 @@
 <!-- Time.vue -->
 <script setup lang="ts">
+import { useSettingsStore } from "../stores/setting";
+const settings = useSettingsStore();
 import alarmOn from "../assets/alaramOn.svg";
 import alarmOff from "../assets/alaramOff.svg";
 import calendar from "../assets/calendar.svg";
@@ -82,7 +84,7 @@ const fetchPrayerTimes = async (latitude: number, longitude: number) => {
     const y = today.getFullYear();
 
     const res = await fetch(
-      `https://api.aladhan.com/v1/timings/${d}-${m}-${y}?latitude=${latitude}&longitude=${longitude}&method=11`,
+      `https://api.aladhan.com/v1/timings/${d}-${m}-${y}?latitude=${latitude}&longitude=${longitude}&method=${settings.hisabMethod}`,
     );
     const data = await res.json();
     const timings = data.data.timings;
@@ -242,6 +244,13 @@ watch(showMoon, (val) => {
       const ctx = starCanvas.value.getContext("2d")!;
       ctx.clearRect(0, 0, starCanvas.value.width, starCanvas.value.height);
     }
+  }
+});
+
+watch(() => settings.hisabMethod, () => {
+  if (lat.value && lon.value) {
+    loadingPrayer.value = true;
+    fetchPrayerTimes(lat.value, lon.value);
   }
 });
 

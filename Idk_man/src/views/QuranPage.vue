@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useSettingsStore } from "../stores/setting";
+const settings = useSettingsStore();
 import { useRouter } from "vue-router";
 import { ref, onMounted } from "vue";
 import Background from "../assets/desktopHome.svg";
@@ -161,8 +163,11 @@ onMounted(() => {
               >{{ ayah.number }}</span
             >
             <p
-              class="text-right text-2xl leading-loose text-white mt-4 mb-3"
-              style="font-family: Amiri, serif"
+              class="text-right leading-loose text-white mt-4 mb-3"
+              :style="{
+                fontSize: settings.quranFontSize + 'px',
+                fontFamily: 'Amiri, serif',
+              }"
             >
               {{ ayah.arabic }}
             </p>

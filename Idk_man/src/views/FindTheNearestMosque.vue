@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useSettingsStore } from "../stores/setting";
+const settings = useSettingsStore();
 import { useRouter } from "vue-router";
 import { ref, onMounted } from "vue";
 
@@ -33,7 +35,8 @@ const getLocation = () => {
 
 const fetchMosques = async (lat: number, lon: number) => {
   try {
-    const url = `https://nominatim.openstreetmap.org/search?q=masjid&lat=${lat}&lon=${lon}&format=json&limit=20&bounded=1&viewbox=${lon - 0.02},${lat + 0.02},${lon + 0.02},${lat - 0.02}`;
+    const radiusDeg = settings.mosqueRadius / 111000;
+    const url = `https://nominatim.openstreetmap.org/search?q=masjid&lat=${lat}&lon=${lon}&format=json&limit=20&bounded=1&viewbox=${lon - radiusDeg},${lat + radiusDeg},${lon + radiusDeg},${lat - radiusDeg}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error();
     const data = await res.json();
