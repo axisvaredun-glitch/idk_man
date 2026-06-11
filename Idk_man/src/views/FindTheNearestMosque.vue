@@ -32,28 +32,18 @@ const getLocation = () => {
 };
 
 const fetchMosques = async (lat: number, lon: number) => {
-  const radius = 2000;
-  const query = `
-    [out:json];
-    node["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lon});
-    out body;
-  `;
-
-  const url = import.meta.env.DEV 
-    ? "https://overpass.kumi.systems/api/interpreter"
-    : "/api/overpass";
-
   try {
-    const res = await fetch(url, { method: "POST", body: query });
+    const url = `https://nominatim.openstreetmap.org/search?q=masjid&lat=${lat}&lon=${lon}&format=json&limit=20&bounded=1&viewbox=${lon - 0.02},${lat + 0.02},${lon + 0.02},${lat - 0.02}`;
+    const res = await fetch(url);
     if (!res.ok) throw new Error();
     const data = await res.json();
-    mosques.value = data.elements
+    mosques.value = data
       .map((el: any) => ({
-        id: el.id,
-        name: el.tags?.name || el.tags?.["name:id"] || "Masjid",
-        lat: el.lat,
-        lon: el.lon,
-        distance: getDistance(lat, lon, el.lat, el.lon),
+        id: el.place_id,
+        name: el.display_name.split(",")[0],
+        lat: parseFloat(el.lat),
+        lon: parseFloat(el.lon),
+        distance: getDistance(lat, lon, parseFloat(el.lat), parseFloat(el.lon)),
       }))
       .sort((a: any, b: any) => a.distance - b.distance);
   } catch {
@@ -120,7 +110,9 @@ const randomQuote = ref(quotes[Math.floor(Math.random() * quotes.length)]);
     class="fixed inset-0 bg-linear-to-b from-green-950 to-green-900 flex flex-col"
   >
     <!-- Header -->
-    <header class="relative flex items-center px-6 py-4 gap-4 border-b border-white/10">
+    <header
+      class="relative flex items-center px-6 py-4 gap-4 border-b border-white/10"
+    >
       <button
         @click="router.push('/')"
         class="text-white/60 hover:text-white text-sm absolute"
@@ -192,10 +184,14 @@ const randomQuote = ref(quotes[Math.floor(Math.random() * quotes.length)]);
       </div>
     </div>
   </div>
-  <div class="absolute bottom-10 left-10 max-w-xs pointer-events-none text-center md:text-left">
+  <div
+    class="absolute bottom-10 left-10 max-w-xs pointer-events-none text-center md:text-left"
+  >
     <p class="text-white/50 text-xs leading-relaxed italic">
       "{{ randomQuote.text }}"
     </p>
-    <p class="text-white/50 text-xs mt-1 md:text-left text-center">— {{ randomQuote.source }}</p>
+    <p class="text-white/50 text-xs mt-1 md:text-left text-center">
+      — {{ randomQuote.source }}
+    </p>
   </div>
 </template>
