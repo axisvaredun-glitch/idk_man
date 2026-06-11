@@ -32,17 +32,16 @@ const getLocation = () => {
 };
 
 const fetchMosques = async (lat: number, lon: number) => {
+  const radius = 2000;
+  const query = `
+    [out:json];
+    node["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lon});
+    out body;
+  `;
+
   try {
-    const radius = 2000; // 2km
-    const query = `
-      [out:json];
-      node["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lon});
-      out body;
-    `;
-    const res = await fetch("https://overpass-api.de/api/interpreter", {
-      method: "POST",
-      body: query,
-    });
+    const res = await fetch("/api/overpass", { method: "POST", body: query });
+    if (!res.ok) throw new Error();
     const data = await res.json();
     mosques.value = data.elements
       .map((el: any) => ({
