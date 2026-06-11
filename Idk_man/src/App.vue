@@ -33,8 +33,7 @@ const { spawnParticles, updateHoverPos, startHoverParticles, stopHoverParticles 
   <div class="fixed inset-0 overflow-hidden">
     <header
       v-if="route.path === '/'"
-      class="absolute pointer-events-auto w-full items-center px-10 py-4 flex z-50"
-    >
+      class="absolute pointer-events-auto w-full items-center px-10 py-4 flex z-50">
       <div class="transis flex gap-2 items-center">
         <img :src="logo" alt="" class="size-10 text-center" />
         <h1 class="logo-text font-bold text-2xl text-jomud tracking-widest">
@@ -108,19 +107,19 @@ const { spawnParticles, updateHoverPos, startHoverParticles, stopHoverParticles 
 <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden">
   <div class="bg-black/30 backdrop-blur-md border-t border-white/10 flex justify-around py-3">
     <button @click="showOption = true" class="flex flex-col items-center gap-1 text-jomud">
-      <img :src="burger" class="size-6" alt="" />
+      <img :src="burger" class="size-6 invert" alt="" />
       <span class="text-xs">Option</span>
     </button>
     <button @click="showContact = true" class="flex flex-col items-center gap-1 text-jomud">
-      <img :src="Phone" class="size-6 text-xl" alt="">
+      <img :src="Phone" class="size-6 text-xl invert" alt="">
       <span class="text-xs">Contact</span>
     </button>
     <button @click="showAbout = true" class="flex flex-col items-center gap-1 text-jomud">
-      <img :src="info" class="text-xl size-6">
+      <img :src="info" class="text-xl size-6 invert">
       <span class="text-xs">About</span>
     </button>
     <button @click="showSetting = true" class="flex flex-col items-center gap-1 text-jomud">
-      <img :src="setting" class="text-xl size-6">
+      <img :src="setting" class="text-xl size-6 invert">
       <span class="text-xs">Settings</span>
     </button>
   </div>
