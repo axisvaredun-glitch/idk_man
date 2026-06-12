@@ -1,6 +1,5 @@
 <!-- App.vue -->
 <script setup lang="ts">
-import menu from "./assets/menu.svg"
 import Phone from "./assets/phone-call.svg"
 import burger from "./assets/burger-bar.svg"
 import setting from "./assets/setting.svg"
@@ -8,7 +7,6 @@ import info from "./assets/info.svg"
 import logo from "./assets/logo.png";
 
 
-const showMenu = ref(false);
 
 
 import { ref } from "vue";
@@ -117,39 +115,27 @@ const { spawnParticles, updateHoverPos, startHoverParticles, stopHoverParticles 
       leave-from-class="translate-y-0"
       leave-to-class="translate-y-full"
       >
-        <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden" v-if="showMenu && route.path === '/'">
-  <div class="bg-black/30 backdrop-blur-md border-t border-white/10 flex justify-around py-3">
-    <button @click="showOption = true" class="flex flex-col items-center gap-1 text-jomud">
-      <img :src="burger" class="size-6 invert" alt="" />
-      <span class="text-xs">Option</span>
-    </button>
-    <button @click="showContact = true" class="flex flex-col items-center gap-1 text-jomud">
-      <img :src="Phone" class="size-6 text-xl invert" alt="">
-      <span class="text-xs">Contact</span>
-    </button>
-    <button @click="showAbout = true" class="flex flex-col items-center gap-1 text-jomud">
-      <img :src="info" class="text-xl size-6 invert">
-      <span class="text-xs">About</span>
-    </button>
-    <button @click="showSetting = true" class="flex flex-col items-center gap-1 text-jomud">
-      <img :src="setting" class="text-xl size-6 invert">
-      <span class="text-xs">Settings</span>
-    </button>
-  </div>
+        <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden" v-if="route.path === '/'">
+          <div class="bg-black/30 backdrop-blur-md border-t border-white/10 flex justify-around py-3 transis">
+            <button @click="showOption = true" class="flex flex-col items-center gap-1 text-jomud">
+              <img :src="burger" class="size-6 invert" alt="" />
+              <span class="text-xs">Option</span>
+            </button>
+            <button @click="showContact = true" class="flex flex-col items-center gap-1 text-jomud">
+              <img :src="Phone" class="size-6 text-xl invert" alt="">
+              <span class="text-xs">Contact</span>
+            </button>
+            <button @click="showAbout = true" class="flex flex-col items-center gap-1 text-jomud">
+              <img :src="info" class="text-xl size-6 invert">
+              <span class="text-xs">About</span>
+            </button>
+            <button @click="showSetting = true" class="flex flex-col items-center gap-1 text-jomud">
+              <img :src="setting" class="text-xl size-6 invert">
+              <span class="text-xs">Settings</span>
+            </button>
+          </div>
         </div>
       </transition>
-<!-- Tombol menu -->
- <transition
-  enter-active-class="transition-transform duration-300 ease-out"
-  enter-from-class="-translate-y-10 opacity-0"
-  enter-to-class="translate-y-0 opacity-100"
- >
- <div class="fixed top-3 right-5 z-50 lg:hidden transis" v-if="route.path === '/'" >
-  <div @click="showMenu = !showMenu" class="size-10">
-    <img :src="menu" alt="">
-  </div>
- </div>
- </transition>
     <RouterView/>
     <SettingDialog v-model="showSetting"> </SettingDialog>
     <AboutDialog v-model="showAbout"></AboutDialog>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import menu from "../assets/burger-bar.svg"
+import menu from "../assets/burger-bar.svg";
 import { useSettingsStore } from "../stores/setting";
 const settings = useSettingsStore();
 import { useRouter } from "vue-router";
@@ -84,12 +84,12 @@ const showMenu = ref(false);
     <header
       class="flex items-center px-8 py-4 gap-4 border-b border-white/10 bg-black/20 backdrop-blur-md"
     >
-      <button
-        @click="router.push('/')"
-        class="text-white/60 hover:text-white text-sm flex items-center gap-1 absolute"
+      <div
+        class="size-4 top-4 left-4 invert lg:hidden absolute"
+        @click="showMenu = !showMenu"
       >
-        ← Back
-      </button>
+        <img :src="menu" alt="" />
+      </div>
       <h1
         class="flex-1 text-center font-bold text-[11px] lg:text-lg text-white tracking-widest uppercase"
       >
@@ -99,16 +99,19 @@ const showMenu = ref(false);
             : "Al-Quran"
         }}
       </h1>
-      <div class="size-4 top-4 right-4 invert lg:hidden absolute " @click="showMenu = !showMenu">
-        <img :src="menu" alt="">
-      </div>
+      <button
+        @click="router.push('/')"
+        class="text-white/60 hover:text-white text-sm flex items-center gap-1 lg:top-5 lg:right-7 absolute top-3 right-4"
+      >
+        ← Back
+      </button>
     </header>
 
     <div class="flex flex-1 overflow-hidden">
       <!-- Sidebar -->
       <aside
         class="w-52 bg-black/20 backdrop-blur-md border-r border-white/10 overflow-y-auto shrink-0 z-40"
-        v-if="showMenu"
+        v-if="!showMenu"
       >
         <div v-if="loadingSurah" class="text-white/40 text-center text-xs p-4">
           Memuat...
@@ -137,12 +140,20 @@ const showMenu = ref(false);
       </aside>
 
       <!-- Main -->
-      <main class="flex-1 overflow-y-auto p-8 absolute lg:static z-0 style="touch-action: pan-y; -webkit-overflow-scrolling: touch;>
+      <main
+        class="flex-1 overflow-y-auto p-8 absolute lg:static z-0 style="
+        touch-action:
+        pan-y;
+        -webkit-overflow-scrolling:
+        touch;
+      >
         <div
           v-if="!selectedSurah"
           class="flex items-center justify-center h-full"
         >
-          <p class="text-white/30 text-lg hidden md:block">Pilih surah di sebelah kiri</p>
+          <p class="text-white/30 text-lg hidden md:block">
+            Pilih surah di sebelah kiri
+          </p>
         </div>
         <div
           v-else-if="loadingAyah"
