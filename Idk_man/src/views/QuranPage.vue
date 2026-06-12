@@ -82,7 +82,7 @@ const showMenu = ref(false);
 
     <!-- Header -->
     <header
-      class="flex items-center px-8 py-4 gap-4 border-b border-white/10 bg-black/20 backdrop-blur-md"
+      class="flex items-center px-8 py-4 gap-4 border-b border-white/10 bg-black/20 backdrop-blur-md z-20"
     >
       <div
         class="size-4 top-4 left-4 invert lg:hidden absolute"
@@ -141,11 +141,8 @@ const showMenu = ref(false);
 
       <!-- Main -->
       <main
-        class="flex-1 overflow-y-auto p-8 absolute lg:static z-0 style="
-        touch-action:
-        pan-y;
-        -webkit-overflow-scrolling:
-        touch;
+        class="flex-1 overflow-y-auto p-8 absolute lg:static z-0 inset-0"
+        style="touch-action: pan-y; -webkit-overflow-scrolling: touch"
       >
         <div
           v-if="!selectedSurah"
