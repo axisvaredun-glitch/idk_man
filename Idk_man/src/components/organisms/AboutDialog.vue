@@ -10,21 +10,48 @@ defineEmits(["update:modelValue"]);
     @update:modelValue="$emit('update:modelValue', $event)"
   >
     <template #title>
-      <h2 class="text-white font-bold text-xl mb-6">About</h2>
+      <h2 class="text-white font-bold text-2xl">About</h2>
+      <div class="w-12 h-0.5 bg-jomud mb-7"></div>
     </template>
     <template #inside>
-      <p class="text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sint
-        eveniet hic quidem consequuntur maiores sed, tenetur deleniti expedita
-        nobis est nihil quisquam commodi beatae saepe fugit! Quia, voluptate
-        quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-        corrupti ratione commodi veritatis excepturi libero dolorum molestiae
-        adipisci omnis, quibusdam corporis reprehenderit nihil architecto odit.
-        Modi quasi repudiandae animi voluptates! Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Quis, beatae provident? Earum porro illo
-        repellendus, reprehenderit numquam, consectetur ex nisi voluptate,
-        quibusdam labore similique natus neque non possimus praesentium odio!
-      </p>
+      <div class="space-y-4">
+        <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+          <p
+            class="text-jomud text-xs font-bold tracking-widest uppercase mb-2"
+          >
+            Tentang Proyek
+          </p>
+          <p class="text-white/80 text-sm leading-relaxed">
+            Aplikasi web Front-End berbasis Vue.js yang dibuat sebagai sarana
+            belajar coding sekaligus wadah pengaplikasian materi keagamaan
+            seperti Hadits dan Doa pilihan.
+          </p>
+        </div>
+
+        <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+          <p
+            class="text-jomud text-xs font-bold tracking-widest uppercase mb-2"
+          >
+            Tujuan
+          </p>
+          <p class="text-white/80 text-sm leading-relaxed">
+            Mengasah kemampuan logika pemrograman dan manipulasi antarmuka
+            melalui contoh kasus nyata yang aman, bermanfaat, dan praktis.
+          </p>
+        </div>
+
+        <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+          <p
+            class="text-jomud text-xs font-bold tracking-widest uppercase mb-2"
+          >
+            Status
+          </p>
+          <div class="flex items-center gap-2">
+            <div class="size-2 rounded-full bg-green-400 animate-pulse"></div>
+            <p class="text-white/80 text-sm">Live di Vercel</p>
+          </div>
+        </div>
+      </div>
     </template>
   </BaseDialog>
 </template>

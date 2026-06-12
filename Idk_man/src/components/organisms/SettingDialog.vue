@@ -20,7 +20,8 @@ const hisabMethods = [
 <template>
   <BaseDialog :modelValue="modelValue" @update:modelValue="$emit('update:modelValue', $event)">
     <template #title>
-      <h2 class="text-white font-bold text-xl mb-6">Settings</h2>
+      <h2 class="text-white font-bold text-2xl">Settings</h2>
+      <div class="w-12 h-0.5 bg-jomud mb-7"></div>
     </template>
     <template #inside>
       <div class="space-y-6">
