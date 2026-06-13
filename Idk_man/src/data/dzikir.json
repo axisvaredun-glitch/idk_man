@@ -1,0 +1,247 @@
+[
+  {
+    "id": "tahlil",
+    "judul": "Tahlil",
+    "deskripsi": "Rangkaian dzikir dan doa yang dibaca bersama sebagai bentuk syukur dan tahlilan.",
+    "bacaan": [
+      {
+        "nomor": 1,
+        "judul": "Istighfar",
+        "arab": "أَسْتَغْفِرُ اللهَ الْعَظِيمَ",
+        "latin": "Astaghfirullahal 'azhiim",
+        "terjemah": "Aku memohon ampun kepada Allah Yang Maha Agung.",
+        "ulang": 3
+      },
+      {
+        "nomor": 2,
+        "judul": "Al-Fatihah",
+        "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ  ١ اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ  ٢ الرَّحْمٰنِ الرَّحِيْمِ  ٣ مٰلِكِ يَوْمِ الدِّيْنِ  ٤ اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُ  ٥ اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَ  ٦ صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ",
+        "latin": "Bismillāhir-raḥmānir-raḥīm. Al-ḥamdu lillāhi rabbil-'ālamīn. Ar-raḥmānir-raḥīm. Māliki yawmid-dīn. Iyyāka na'budu wa iyyāka nasta'īn. Ihdinaṣ-ṣirāṭal-mustaqīm. Ṣirāṭallażīna an'amta 'alayhim, ghayril-maghḍūbi 'alayhim wa laḍ-ḍāllīn.",
+        "terjemah": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang. Segala puji bagi Allah, Tuhan seluruh alam, Yang Maha Pengasih, Maha Penyayang, Pemilik hari pembalasan. Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan. Tunjukilah kami jalan yang lurus, yaitu jalan orang-orang yang telah Engkau beri nikmat, bukan jalan mereka yang dimurkai dan bukan pula jalan mereka yang sesat.",
+        "ulang": 1
+      },
+      {
+        "nomor": 3,
+        "judul": "Al-Ikhlas",
+        "arab": "قُلْ هُوَ اللّٰهُ اَحَدٌ  ١ اَللّٰهُ الصَّمَدُ  ٢ لَمْ يَلِدْ وَلَمْ يُوْلَدْ  ٣ وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَدٌ",
+        "latin": "Qul huwallāhu aḥad. Allāhuṣ-ṣamad. Lam yalid wa lam yūlad. Wa lam yakul lahū kufuwan aḥad.",
+        "terjemah": "Katakanlah (Muhammad), 'Dialah Allah, Yang Maha Esa. Allah tempat meminta segala sesuatu. Dia tidak beranak dan tidak pula diperanakkan. Dan tidak ada sesuatu yang setara dengan Dia.'",
+        "ulang": 3
+      },
+      {
+        "nomor": 4,
+        "judul": "Al-Falaq",
+        "arab": "قُلْ اَعُوْذُ بِرَبِّ الْفَلَقِ  ١ مِنْ شَرِّ مَا خَلَقَ  ٢ وَمِنْ شَرِّ غَاسِقٍ اِذَا وَقَبَ  ٣ وَمِنْ شَرِّ النَّفّٰثٰتِ فِى الْعُقَدِ  ٤ وَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ",
+        "latin": "Qul a'ūżu birabbil-falaq. Min syarri mā khalaq. Wa min syarri ghāsiqin iżā waqab. Wa min syarrin-naffāṡāti fil-'uqad. Wa min syarri ḥāsidin iżā ḥasad.",
+        "terjemah": "Katakanlah, 'Aku berlindung kepada Tuhan yang menguasai subuh (fajar), dari kejahatan (makhluk yang) Dia ciptakan, dan dari kejahatan malam apabila telah gelap gulita, dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya), dan dari kejahatan orang yang dengki apabila ia dengki.'",
+        "ulang": 3
+      },
+      {
+        "nomor": 5,
+        "judul": "An-Nas",
+        "arab": "قُلْ اَعُوْذُ بِرَبِّ النَّاسِ  ١ مَلِكِ النَّاسِ  ٢ اِلٰهِ النَّاسِ  ٣ مِنْ شَرِّ الْوَسْوَاسِ ەۙ الْخَنَّاسِ  ٤ الَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِ  ٥ مِنَ الْجِنَّةِ وَالنَّاسِ",
+        "latin": "Qul a'ūżu birabbin-nās. Malikin-nās. Ilāhin-nās. Min syarril-waswāsil-khannās. Allażī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
+        "terjemah": "Katakanlah, 'Aku berlindung kepada Tuhannya manusia, Raja manusia, Sembahan manusia, dari kejahatan (bisikan) setan yang bersembunyi, yang membisikkan (kejahatan) ke dalam dada manusia, dari (golongan) jin dan manusia.'",
+        "ulang": 3
+      },
+      {
+        "nomor": 6,
+        "judul": "Ayat Kursi",
+        "arab": "اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
+        "latin": "Allāhu lā ilāha illā huw, al-ḥayyul-qayyūm, lā ta'khużuhū sinatuw wa lā nawm, lahū mā fis-samāwāti wa mā fil-arḍ, man żallażī yasyfa'u 'indahū illā bi'iżnih, ya'lamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bisyay'im min 'ilmihī illā bimā syā', wasi'a kursiyyuhus-samāwāti wal-arḍ, wa lā ya'ūduhū ḥifẓuhumā, wa huwal-'aliyyul-'aẓīm.",
+        "terjemah": "Allah, tidak ada tuhan selain Dia. Yang Maha Hidup, Yang terus-menerus mengurus (makhluk-Nya), tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan apa yang ada di bumi. Tidak ada yang dapat memberi syafaat di sisi-Nya tanpa izin-Nya. Dia mengetahui apa yang ada di hadapan mereka dan apa yang ada di belakang mereka, dan mereka tidak mengetahui sesuatu pun tentang ilmu-Nya melainkan apa yang Dia kehendaki. Kursi-Nya meliputi langit dan bumi. Dan Dia tidak merasa berat memelihara keduanya, dan Dia Maha Tinggi, Maha Besar.",
+        "ulang": 1
+      },
+      {
+        "nomor": 7,
+        "judul": "Tahlil & Tasbih",
+        "arab": "لَا إِلَهَ إِلَّا اللهُ",
+        "latin": "Lā ilāha illallāh",
+        "terjemah": "Tiada tuhan selain Allah.",
+        "ulang": 33
+      },
+      {
+        "nomor": 8,
+        "judul": "Shalawat",
+        "arab": "اَللّٰهُمَّ صَلِّ عَلٰى سَيِّدِنَا مُحَمَّدٍ وَعَلٰى آلِ سَيِّدِنَا مُحَمَّدٍ",
+        "latin": "Allāhumma ṣalli 'alā sayyidinā Muḥammadin wa 'alā āli sayyidinā Muḥammad",
+        "terjemah": "Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad dan kepada keluarganya.",
+        "ulang": 3
+      },
+      {
+        "nomor": 9,
+        "judul": "Doa Penutup Tahlil",
+        "arab": "اَللّٰهُمَّ اِنَّا نَسْأَلُكَ سَلَامَةً فِي الدِّيْنِ وَعَافِيَةً فِي الْجَسَدِ وَزِيَادَةً فِي الْعِلْمِ وَبَرَكَةً فِي الرِّزْقِ وَتَوْبَةً قَبْلَ الْمَوْتِ وَرَحْمَةً عِنْدَ الْمَوْتِ وَمَغْفِرَةً بَعْدَ الْمَوْتِ",
+        "latin": "Allāhumma innā nas'aluka salāmatan fid-dīn, wa 'āfiyatan fil-jasad, wa ziyādatan fil-'ilm, wa barakatan fir-rizq, wa tawbatan qablal-mawt, wa raḥmatan 'indal-mawt, wa maghfiratan ba'dal-mawt.",
+        "terjemah": "Ya Allah, kami memohon kepada-Mu keselamatan dalam agama, kesehatan pada badan, tambahan ilmu, keberkahan rezeki, taubat sebelum mati, rahmat ketika mati, dan ampunan setelah mati.",
+        "ulang": 1
+      }
+    ]
+  },
+  {
+    "id": "ratibul-haddad",
+    "judul": "Ratibul Haddad",
+    "deskripsi": "Susunan dzikir dari Al-Habib Abdullah bin Alawi Al-Haddad, dibaca setiap pagi dan petang.",
+    "bacaan": [
+      {
+        "nomor": 1,
+        "judul": "Al-Fatihah",
+        "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ  ١ اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ  ٢ الرَّحْمٰنِ الرَّحِيْمِ  ٣ مٰلِكِ يَوْمِ الدِّيْنِ  ٤ اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُ  ٥ اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَ  ٦ صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ",
+        "latin": "Bismillāhir-raḥmānir-raḥīm. Al-ḥamdu lillāhi rabbil-'ālamīn...",
+        "terjemah": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang. Segala puji bagi Allah, Tuhan seluruh alam...",
+        "ulang": 1
+      },
+      {
+        "nomor": 2,
+        "judul": "Al-Ikhlas",
+        "arab": "قُلْ هُوَ اللّٰهُ اَحَدٌ  ١ اَللّٰهُ الصَّمَدُ  ٢ لَمْ يَلِدْ وَلَمْ يُوْلَدْ  ٣ وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَدٌ",
+        "latin": "Qul huwallāhu aḥad. Allāhuṣ-ṣamad. Lam yalid wa lam yūlad. Wa lam yakul lahū kufuwan aḥad.",
+        "terjemah": "Katakanlah, Dialah Allah Yang Maha Esa...",
+        "ulang": 3
+      },
+      {
+        "nomor": 3,
+        "judul": "Al-Falaq",
+        "arab": "قُلْ اَعُوْذُ بِرَبِّ الْفَلَقِ  ١ مِنْ شَرِّ مَا خَلَقَ  ٢ وَمِنْ شَرِّ غَاسِقٍ اِذَا وَقَبَ  ٣ وَمِنْ شَرِّ النَّفّٰثٰتِ فِى الْعُقَدِ  ٤ وَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ",
+        "latin": "Qul a'ūżu birabbil-falaq...",
+        "terjemah": "Katakanlah, Aku berlindung kepada Tuhan yang menguasai subuh...",
+        "ulang": 3
+      },
+      {
+        "nomor": 4,
+        "judul": "An-Nas",
+        "arab": "قُلْ اَعُوْذُ بِرَبِّ النَّاسِ  ١ مَلِكِ النَّاسِ  ٢ اِلٰهِ النَّاسِ  ٣ مِنْ شَرِّ الْوَسْوَاسِ ەۙ الْخَنَّاسِ  ٤ الَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِ  ٥ مِنَ الْجِنَّةِ وَالنَّاسِ",
+        "latin": "Qul a'ūżu birabbin-nās...",
+        "terjemah": "Katakanlah, Aku berlindung kepada Tuhannya manusia...",
+        "ulang": 3
+      },
+      {
+        "nomor": 5,
+        "judul": "Ayat Kursi",
+        "arab": "اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
+        "latin": "Allāhu lā ilāha illā huw, al-ḥayyul-qayyūm...",
+        "terjemah": "Allah, tidak ada tuhan selain Dia. Yang Maha Hidup, Yang terus-menerus mengurus makhluk-Nya...",
+        "ulang": 1
+      },
+      {
+        "nomor": 6,
+        "judul": "Istighfar",
+        "arab": "أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ",
+        "latin": "Astaghfirullāhal-'aẓīmallażī lā ilāha illā huwal-ḥayyul-qayyūmu wa atūbu ilaih",
+        "terjemah": "Aku memohon ampunan kepada Allah Yang Maha Agung, yang tiada tuhan selain Dia, Yang Maha Hidup lagi Maha Berdiri sendiri, dan aku bertaubat kepada-Nya.",
+        "ulang": 3
+      },
+      {
+        "nomor": 7,
+        "judul": "Tahlil",
+        "arab": "لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+        "latin": "Lā ilāha illallāhu waḥdahū lā syarīka lah, lahul-mulku wa lahul-ḥamdu yuḥyī wa yumītu wa huwa 'alā kulli syay'in qadīr",
+        "terjemah": "Tiada tuhan selain Allah semata, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan segala puji. Dia yang menghidupkan dan mematikan, dan Dia Maha Kuasa atas segala sesuatu.",
+        "ulang": 10
+      },
+      {
+        "nomor": 8,
+        "judul": "Shalawat Nabi",
+        "arab": "اَللّٰهُمَّ صَلِّ عَلٰى سَيِّدِنَا مُحَمَّدٍ وَعَلٰى آلِ سَيِّدِنَا مُحَمَّدٍ",
+        "latin": "Allāhumma ṣalli 'alā sayyidinā Muḥammadin wa 'alā āli sayyidinā Muḥammad",
+        "terjemah": "Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad dan kepada keluarganya.",
+        "ulang": 3
+      },
+      {
+        "nomor": 9,
+        "judul": "Doa Penutup",
+        "arab": "سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ وَسَلَامٌ عَلَى الْمُرْسَلِينَ وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِينَ",
+        "latin": "Subḥāna rabbika rabbil-'izzati 'ammā yaṣifūn, wa salāmun 'alal-mursalīn, wal-ḥamdu lillāhi rabbil-'ālamīn.",
+        "terjemah": "Maha Suci Tuhanmu, Tuhan Yang Maha Mulia, dari apa yang mereka sifatkan. Dan semoga keselamatan dilimpahkan kepada para rasul. Dan segala puji bagi Allah, Tuhan semesta alam.",
+        "ulang": 1
+      }
+    ]
+  },
+  {
+    "id": "wirdul-latif",
+    "judul": "Wirdul Latif",
+    "deskripsi": "Kumpulan dzikir dan doa pilihan dari Al-Habib Abdullah Al-Haddad, dibaca setiap pagi hari.",
+    "bacaan": [
+      {
+        "nomor": 1,
+        "judul": "Pembukaan",
+        "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
+        "latin": "Bismillāhir-raḥmānir-raḥīm",
+        "terjemah": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.",
+        "ulang": 1
+      },
+      {
+        "nomor": 2,
+        "judul": "Doa Pagi",
+        "arab": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلّٰهِ، وَالْحَمْدُ لِلّٰهِ، لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+        "latin": "Aṣbaḥnā wa aṣbaḥal-mulku lillāh, wal-ḥamdu lillāh, lā ilāha illallāhu waḥdahū lā syarīka lah, lahul-mulku wa lahul-ḥamdu wa huwa 'alā kulli syay'in qadīr.",
+        "terjemah": "Kami berpagi hari dan berpagi hari pula kerajaan milik Allah. Segala puji bagi Allah. Tiada tuhan selain Allah semata, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan segala puji, dan Dia Maha Kuasa atas segala sesuatu.",
+        "ulang": 1
+      },
+      {
+        "nomor": 3,
+        "judul": "Doa Perlindungan",
+        "arab": "اَللّٰهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ",
+        "latin": "Allāhumma bika aṣbaḥnā wa bika amsaynā wa bika naḥyā wa bika namūtu wa ilaikan-nusyūr.",
+        "terjemah": "Ya Allah, dengan izin-Mu kami berpagi hari dan berpetang hari, dengan izin-Mu kami hidup dan mati, dan kepada-Mu kami kembali.",
+        "ulang": 1
+      },
+      {
+        "nomor": 4,
+        "judul": "Al-Fatihah",
+        "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ  ١ اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ  ٢ الرَّحْمٰنِ الرَّحِيْمِ  ٣ مٰلِكِ يَوْمِ الدِّيْنِ  ٤ اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُ  ٥ اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَ  ٦ صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ",
+        "latin": "Bismillāhir-raḥmānir-raḥīm. Al-ḥamdu lillāhi rabbil-'ālamīn...",
+        "terjemah": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang. Segala puji bagi Allah, Tuhan seluruh alam...",
+        "ulang": 1
+      },
+      {
+        "nomor": 5,
+        "judul": "Al-Ikhlas",
+        "arab": "قُلْ هُوَ اللّٰهُ اَحَدٌ  ١ اَللّٰهُ الصَّمَدُ  ٢ لَمْ يَلِدْ وَلَمْ يُوْلَدْ  ٣ وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَدٌ",
+        "latin": "Qul huwallāhu aḥad. Allāhuṣ-ṣamad. Lam yalid wa lam yūlad. Wa lam yakul lahū kufuwan aḥad.",
+        "terjemah": "Katakanlah, Dialah Allah Yang Maha Esa...",
+        "ulang": 3
+      },
+      {
+        "nomor": 6,
+        "judul": "Ayat Kursi",
+        "arab": "اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
+        "latin": "Allāhu lā ilāha illā huw, al-ḥayyul-qayyūm...",
+        "terjemah": "Allah, tidak ada tuhan selain Dia. Yang Maha Hidup, Yang terus-menerus mengurus makhluk-Nya...",
+        "ulang": 1
+      },
+      {
+        "nomor": 7,
+        "judul": "Doa Keselamatan",
+        "arab": "اَللّٰهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+        "latin": "Allāhumma innī as'alukal-'afwa wal-'āfiyata fid-dunyā wal-ākhirah.",
+        "terjemah": "Ya Allah, sesungguhnya aku memohon kepada-Mu pemaafan dan keselamatan di dunia dan akhirat.",
+        "ulang": 3
+      },
+      {
+        "nomor": 8,
+        "judul": "Istighfar",
+        "arab": "أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ",
+        "latin": "Astaghfirullāhal-'aẓīmallażī lā ilāha illā huwal-ḥayyul-qayyūmu wa atūbu ilaih",
+        "terjemah": "Aku memohon ampunan kepada Allah Yang Maha Agung, yang tiada tuhan selain Dia, Yang Maha Hidup lagi Maha Berdiri sendiri, dan aku bertaubat kepada-Nya.",
+        "ulang": 3
+      },
+      {
+        "nomor": 9,
+        "judul": "Shalawat",
+        "arab": "اَللّٰهُمَّ صَلِّ عَلٰى سَيِّدِنَا مُحَمَّدٍ وَعَلٰى آلِ سَيِّدِنَا مُحَمَّدٍ",
+        "latin": "Allāhumma ṣalli 'alā sayyidinā Muḥammadin wa 'alā āli sayyidinā Muḥammad",
+        "terjemah": "Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad dan kepada keluarganya.",
+        "ulang": 10
+      },
+      {
+        "nomor": 10,
+        "judul": "Doa Penutup",
+        "arab": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+        "latin": "Rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā 'ażāban-nār.",
+        "terjemah": "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
+        "ulang": 1
+      }
+    ]
+  }
+]

@@ -7,9 +7,6 @@ import info from "./assets/info.svg"
 import logo from "./assets/logo.png";
 
 
-
-
-
 import { ref } from "vue";
 // Navbar Import
 import SettingDialog from "./components/organisms/SettingDialog.vue";

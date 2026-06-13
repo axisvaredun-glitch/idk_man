@@ -5,19 +5,7 @@ import mosqueTime from "../../assets/mosqueTime.svg";
 import quranSvg from "../../assets/quran.svg";
 import islamicSvg from "../../assets/islamic.svg";
 import mosqueFinderSvg from "../../assets/mosqueFinder.svg";
-import { animate } from 'animejs';
-
-import { onMounted, nextTick } from "vue";
-
-onMounted(async () => {
-  await nextTick();
-  animate('.inTrans', {
-    y: [100, 0],
-    opacity: [0, 1],
-    duration: 1000,
-    ease: 'inCirc'
-  });
-});
+import feedBackSvg from "../../assets/feedback.svg"
 
 import { onUnmounted } from "vue";
 
@@ -51,12 +39,12 @@ const goToQuran = () => {
     router.push("/quran");
   }, 150);
 };
-const goToNurul = () => {
+const goToDzikir = () => {
   emit("update:modelValue", false);
   stopHoverParticles();
   document.querySelectorAll("canvas").forEach((c) => c.remove());
   setTimeout(() => {
-    router.push("/nurul");
+    router.push("/dzikir");
   }, 150);
 };
 const goToMosque = () => {
@@ -65,6 +53,14 @@ const goToMosque = () => {
   document.querySelectorAll("canvas").forEach((c) => c.remove());
   setTimeout(() => {
     router.push("/mosque");
+  }, 150);
+};
+const goToFeedBack = () => {
+  emit("update:modelValue", false);
+  stopHoverParticles();
+  document.querySelectorAll("canvas").forEach((c) => c.remove());
+  setTimeout(() => {
+    router.push("/feedBack");
   }, 150);
 };
 
@@ -120,7 +116,7 @@ onUnmounted(() => {
           title="Sirah"
           class="inTrans size-15 brightness-0 invert hover:invert-0 cursor-pointer pointer-events-auto"
           @click="(e) => {
-              goToNurul();
+              goToDzikir();
               spawnParticles(e, 40, 12);
             }
           "
@@ -135,6 +131,20 @@ onUnmounted(() => {
           class="inTrans size-15 brightness-0 invert hover:invert-0 cursor-pointer pointer-events-auto"
           @click="(e) => {
               goToMosque();
+              spawnParticles(e, 40, 12);
+            }
+          "
+          @mouseenter="startHoverParticles"
+          @mousemove="updateHoverPos"
+          @mouseleave="stopHoverParticles""
+          alt="Al-Quran"
+        />
+        <img
+          :src="feedBackSvg"
+          title="Sirah"
+          class="inTrans size-15 brightness-0 invert hover:invert-0 cursor-pointer pointer-events-auto"
+          @click="(e) => {
+              goToFeedBack();
               spawnParticles(e, 40, 12);
             }
           "

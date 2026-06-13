@@ -3,8 +3,9 @@ import { createRouter, createWebHistory } from "vue-router"; // ← ini kurang!
 import HomePage from "../views/HomePage.vue";
 import TimePage from "../views/Time.vue";
 import QuranPage from "../views/QuranPage.vue";
-import SirahNurulYaqienPage from "../views/SirahNurulYaqien.vue";
+import DzikirPage from "../views/DzikirPage.vue";
 import MosqueFinderPage from "../views/FindTheNearestMosque.vue";
+import FeedBack from "../views/FeedBack.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -12,8 +13,9 @@ const router = createRouter({
     { path: "/", component: HomePage },
     { path: "/time", component: TimePage },
     { path: "/quran", component: QuranPage },
-    { path: "/nurul", component: SirahNurulYaqienPage },
+    { path: "/dzikir", component: DzikirPage },
     { path: "/mosque", component: MosqueFinderPage },
+    { path: "/feedBack", component: FeedBack },
   ],
 });
 
